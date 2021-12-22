@@ -100,7 +100,7 @@ class PasswordManager extends Component {
             className="inputContainer d-flex flex-column justify-content-center align-items-start order-1 order-md-0 p-4"
             onSubmit={this.onClickAdd}
           >
-            <p className="headingNew">Add New Password</p>
+            <h1 className="headingNew">Add New Password</h1>
             <div className="webInputContainer">
               <img
                 src="https://assets.ccbp.in/frontend/react-js/password-manager-website-img.png"
@@ -144,7 +144,7 @@ class PasswordManager extends Component {
               />
             </div>
             <div className="d-flex flex-column justify-content-center align-items-end">
-              <button type="submit" className="btn btn-primary">
+              <button type="submit" testid="delete" className="btn btn-primary">
                 Add
               </button>
             </div>
@@ -155,7 +155,7 @@ class PasswordManager extends Component {
           <div>
             <div className="d-flex justify-content-between">
               <div className="d-flex flex-row justify-content-center align-item-center p-1">
-                <p className="headingNew11 mr-2">Your Passwords</p>
+                <h1 className="headingNew11 mr-2">Your Passwords</h1>
                 <div className="headingNew1 d-flex flex-row justify-content-center align-item-center">
                   <p>{listLength}</p>
                 </div>
@@ -177,8 +177,14 @@ class PasswordManager extends Component {
             </div>
             <hr />
             <div className="d-flex justify-content-end">
-              <input type="checkbox" onClick={this.onClickCheckBox} />
-              <p className="headingNew11 ml-2">Show Passwords</p>
+              <input
+                type="checkbox"
+                id="checkboxLabel"
+                onClick={this.onClickCheckBox}
+              />
+              <label htmlFor="checkboxLabel" className="headingNew11 ml-2">
+                Show passwords
+              </label>
             </div>
             <ul className="d-flex flex-row">
               {filteredList.map(eachItem => (
