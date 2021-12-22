@@ -1,0 +1,36 @@
+.deletImg {
+  width: 30px;
+}
+.listItem {
+  background-color: transparent;
+  border-radius: 10px;
+  border: solid 1px #9ba9eb;
+  list-style-type: none;
+}
+.starImg {
+  width: 30px;
+}
+.weblogo {
+  background-color: #10b981;
+  width: 40px;
+  border-radius: 20px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.initialHeading {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 20px;
+}
+.webLink {
+  font-family: 'Roboto';
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+}
+.starImg {
+  width: 100px;
+}
